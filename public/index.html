@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estacionamento</title>
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+  <div class="separador">
+    <img src="./images/estacionamento.png" alt="logo estacionamento">
+  </div>
+  <input class="input_text" type="text" name="nome_cliente" id="id_cliente" placeholder="Nome" />
+  <input class="input_text" type="text" name="veiculo" id="id_veiculo" placeholder="Veículo" />
+  <input class="input_text" type="text" name="nome_placa" id="id_placa" placeholder="Placa" />
+
+  <div>
+    <button class="btn" onclick="entrada()">
+      Entrada
+    </button>
+    <button class="btn" onclick="saida()">
+      Saida
+    </button>
+  </div>
+
+  <table class="tab">
+    <thead class="tab_head">
+      <tr class="tab_row">
+        <th>Nome</th>
+        <th>Veiculo</th>
+        <th>Placa</th>
+        <th>Entrada</th>
+      </tr>
+    </thead>
+    <tbody class="tab_body" id="tab_body"></tbody>
+  </table>
+
+  <footer></footer>
+</body>
+<script src="./js/index.js"></script>
+<script>
+  const carregarStore = () => {
+    getStore()
+  }
+  window.onload = carregarStore
+</script>
+
+</html>

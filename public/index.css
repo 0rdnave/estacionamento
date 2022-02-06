@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(48, 28, 102);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  color: aliceblue;
+}
+
+thead {
+  font-size: 24px;
+}
+
+.tab th {
+  padding-top: 16px;
+  padding-right: 30px;
+  padding-bottom: 8px;
+}
+
+.tab td {
+  padding-right: 30px;
+}
+
+.image {
+  height: 200px;
+}
+.input_text {
+  width: 200px;
+  height: 24px;
+}
+.btn {
+  padding: 4px 8px;
+  color: aliceblue;
+}
